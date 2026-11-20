@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --btn: rgb(227, 212, 11);
+  --primary: linear-gradient(#9e7ddc, #bc97d9)
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 200px;
+}
+
+.mainBox {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #1e2344, #8a4dad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+
+.weather {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.forecast {
+  font-size: 50px;
+  font-weight: 300px;
+  color: var(--btn);
+}
+
+.start {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: var(--btn);
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.start:hover {
+  background: #f4c842;
+  transform: scale(1.02);
+  transform-origin: all 0.1;
+}
+#windIcon {
+  width: 70px;
+}
+
+#humidityIcon {
+  width: 70px;
+}
+
+
+.searchBox {
+  height: 40px;
+  width: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+.searchBox input{
+    width: 230px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.img{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-top: 20px;
+    width: 130px;
+}
+
+.iconBox p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.tempBox{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#temp{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 500px;
+}
+
+#city{
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--btn);
+}
+
+.extraDetails{
+  margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.extraDetails .wind{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#windIcon{
+    width: 60px;
+}
+
+.windData p{
+  font-size: 15px;
+}
+
+
+.extraDetails .humidity{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#humidityIcon{
+    width: 60px;
+}
+
+.humidityData p{
+  font-size: 15px;
+}
+
+.notfound{
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.mainBox3 h1{
+  font-size: 60px;
+}
+
+.text{
+  width: 80%;
+}
+
+.text p{
+  font-size: 15px;
+  text-align: center;
+}
+
+.oops{
+  line-height: 0px;
+}
+
+
+.goBack {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: var(--btn);
+  color: black;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+}
+
+.goBack:hover {
+  background: #f4c842;
+  transform: scale(1.02);
+  transform-origin: all 0.1;
+}
+
+.inactive{
+  display: none;
+}
