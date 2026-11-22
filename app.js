@@ -29,8 +29,8 @@ function changeIcon(weatherMain) {
     Snow: "./snow.png",
     Smoke: "./mist.png",
     Dust: "./haze.png",
-    Clear:"./clear1.png",
-    Sand: "./sand.png"
+    Clear: "./clear1.png",
+    Sand: "./sand.png",
   };
 
   icon.src = icons[weatherMain] || "./cloudy.png";
@@ -48,13 +48,13 @@ async function getWeatherData(city) {
     mainBox2.classList.add("inactive");
     mainBox1.classList.add("inactive");
     mainBox3.classList.remove("inactive");
-    desc.innerHTML = "description"
-    temp.innerHTML ="0°C";
+    desc.innerHTML = "description";
+    temp.innerHTML = "0°C";
     cityName.innerHTML = "New York";
-    wind.innerHTML ="0 km/h";
+    wind.innerHTML = "0 km/h";
     humidityper.innerHTML = "0 %";
-    search.value="";
-    icon.src="./clear1.png"
+    search.value = "";
+    icon.src = "./clear1.png";
   }
 
   desc.innerHTML = weatherData.weather[0].description;
@@ -80,3 +80,15 @@ goHome.addEventListener("click", () => {
   mainBox3.classList.add("inactive");
   mainBox1.classList.remove("inactive");
 });
+
+//dark theme
+let themeIcon = document.querySelector("#theme");
+
+themeIcon.onclick = () => {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    themeIcon.src = "./sun.png";
+  } else {
+    themeIcon.src = "./moon.png";
+  }
+};
