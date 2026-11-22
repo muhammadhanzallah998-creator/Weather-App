@@ -242,7 +242,7 @@ img {
   --main-bg: linear-gradient(180deg, #080b16, #252b42);
 
   --text-primary: #f5f5f5;
-  --text-secondary: #ffffff;
+  --text-secondary: black;
   --text-accent: var(--btn);
 
   --input-bg: #252b42;
